@@ -9,7 +9,7 @@ const News = props => {
   const [error, setError] = useState(null);
   const [darkMode, setDarkMode] = useState(false);
 
-  document.body.style = darkMode ? 'background: dark;' : 'background: white;';
+  document.body.style = darkMode ? 'background: black;' : 'background: white;';
 
   const searchInputRef = useRef();
 
@@ -66,6 +66,7 @@ const News = props => {
         alt="React Logo"
         className="float-right h-5"
       />
+      <div className="text-xs float-right">Dark mode</div>
       <h1 className={styles.listLabel}>Hooks news</h1>
       <form className="mb-5" onSubmit={handleSearch}>
         <input
